@@ -1,1 +1,5 @@
-Redirect 301 / https://www.raspitt.org/
+RewriteEngine on
+
+RewriteBase /
+
+RewriteRule (.*) http://www.raspitt.org [R=301,L]
